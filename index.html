@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICCV 2025 - Project Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #24292e;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .hero-section {
+            background: linear-gradient(to bottom, #f1f5f9, #f8f9fa);
+            border-bottom: 1px solid #e1e4e8;
+            padding: 60px 0;
+            margin-bottom: 40px;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            background-image: radial-gradient(circle at 1px 1px, #e1e4e8 1px, transparent 0);
+            background-size: 40px 40px;
+            opacity: 0.4;
+            pointer-events: none;
+        }
+        .header {
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+        .content-section {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            padding: 40px;
+            margin-bottom: 30px;
+        }
+        .title {
+            font-family: 'Google Sans', sans-serif;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #24292e;
+            font-weight: 700;
+        }
+        .authors {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            color: #24292e;
+        }
+        .affiliations {
+            font-size: 1em;
+            color: #586069;
+            margin-bottom: 40px;
+        }
+        .conference {
+            font-family: 'Google Sans', sans-serif;
+            font-weight: 500;
+            color: #0366d6;
+            margin-bottom: 40px;
+            font-size: 1.2em;
+        }
+        .section {
+            margin: 40px 0;
+        }
+        .section-title {
+            font-family: 'Google Sans', sans-serif;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            color: #24292e;
+            font-weight: 700;
+        }
+        .paper-links {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+        .button {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 16px;
+            background-color: #fff;
+            color: #0366d6;
+            text-decoration: none;
+            border-radius: 3px;
+            transition: all 0.2s ease;
+            font-family: 'Google Sans', sans-serif;
+            font-weight: 500;
+            font-size: 0.95em;
+            border: 1px solid #0366d6;
+        }
+        .button i {
+            font-size: 0.9em;
+        }
+        .button:hover {
+            background-color: #0366d6;
+            color: white;
+        }
+        .button:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 4px rgba(37, 99, 235, 0.1);
+        }
+        .teaser {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            display: block;
+        }
+        .author-name {
+            text-decoration: none;
+            color: #0366d6;
+            font-weight: 400;
+        }
+        .author-name:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            .title {
+                font-size: 2em;
+            }
+            .authors {
+                font-size: 1em;
+            }
+        }
+        .subsection-title {
+            font-family: 'Google Sans', sans-serif;
+            font-size: 1.3em;
+            margin: 30px 0 20px;
+            color: #24292e;
+            font-weight: 500;
+        }
+        .figure {
+            margin: 20px 0 40px;
+            text-align: center;
+        }
+        .figure img {
+            max-width: 100%;
+            border-radius: 4px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .figure figcaption {
+            margin-top: 10px;
+            color: #586069;
+            font-size: 0.95em;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero-section">
+        <div class="container">
+            <div class="header">
+                <h1 class="title">Robust Low-light Scene Restoration via Illumination Transition</h1>
+                <div class="conference">
+                    ICCV 2025
+                </div>
+                <div class="authors">
+                    <a href="#" class="author-name">Ze Li</a><sup>1</sup>,
+                    <a href="#" class="author-name">Feng Zhang</a><sup>2</sup>,
+                    <a href="#" class="author-name">Xiatian Zhu</a><sup>3</sup>,
+                    <a href="#" class="author-name">Zhang Meng</a><sup>1</sup>,
+                    <a href="#" class="author-name">Yanghong Zhou</a><sup>4</sup>,
+                    <a href="#" class="author-name">P. Y. Mok</a><sup>1</sup>
+                </div>
+                <div class="affiliations">
+                    <sup>1</sup>The Hong Kong University of Science and Technology<br>
+                    <sup>2</sup>Nanjing University of Posts and Telecommunications<br>
+                    <sup>3</sup>University of Surrey<br>
+                    <sup>4</sup>The Hong Kong Polytechnic University
+                </div>
+                <div class="paper-links">
+                    <a href="#" class="button"><i class="fas fa-file-alt"></i>Paper</a>
+                    <a href="#" class="button"><i class="fab fa-github"></i>Code</a>
+                    <a href="#" class="button"><i class="fas fa-quote-right"></i>BibTeX</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="content-section">
+            <h2 class="section-title">Abstract</h2>
+            <p>Synthesizing normal-light novel views from low-light multiview images remains a challenging yet practical task due to the low visibility and high ISO noise challenges. Existing low-light enhancement methods often struggle to preprocess these images effectively due to their inability to structurally correlate multiple views. While state-of-the-art approaches have advanced by manipulating illumination-related components during rendering, they often introduce color distortions and artifacts. Moreover, they rely solely on NeRF's multi-view optimization, which offers limited denoising effectiveness. In this paper, we propose a novel Robust Low-light Scene Restoration framework termed (RoSe), which enables novel-view synthesis under normal lighting from low-light multiview images. Inspired by the 2D Retinex theory, we frame this task as an illuminance transition estimation problem in 3D space, further conceptualizing it as a specialized rendering task. This multiview-consistent illuminance transition field establishes a robust connection between low-light and normal-light conditions. By further exploiting the inherent low-rank property of illumination to constrain the transition representation, we achieve more effective denoising without complex 2D techniques or explicit noise modeling. To this end, we design a concise dual-branch architecture and propose a low-rank denoising module. Experiments demonstrate that RoSe significantly outperforms state-of-the-art models in both rendering quality and multiview consistency on standard benchmarks.</p>
+        </div>
+
+        <div class="content-section">
+            <h2 class="section-title">Overview</h2>
+            <img src="teaser.png" alt="Method Overview" class="teaser">
+        </div>
+
+        <div class="content-section">
+            <h2 class="section-title">Citation</h2>
+            <pre style="background: #f8f9fa; padding: 20px; border-radius: 6px; overflow-x: auto; border: 1px solid #e1e4e8;">
+@inproceedings{li2025robust,
+    title={Robust Low-light Scene Restoration via Illumination Transition},
+    author={Li, Ze and Zhang, Feng and Zhu, Xiatian and Meng, Zhang and Zhou, Yanghong and Mok, P. Y.},
+    booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+    year={2025}
+}</pre>
+        </div>
+
+        <div class="content-section">
+            <h2 class="section-title">Method</h2>
+            <h3 class="subsection-title">Overview</h3>
+            <figure class="figure">
+                <img src="figure2.png" alt="Method Overview" class="teaser">
+                <figcaption>Figure 2: An overview of robust low-light scene restoration architecture.</figcaption>
+            </figure>
+        </div>
+
+        <div class="content-section">
+            <h2 class="section-title">Results</h2>
+            
+            <h3 class="subsection-title">Comparisons with State-of-the-art Methods</h3>
+            <figure class="figure">
+                <img src="figure1.png" alt="Comparison with SOTA" class="teaser">
+                <figcaption>Figure 1: Image/video enhancement (Zero-DCE+NeRF, RUAS+NeRF, LLVE+NeRF) vs. state-of-the-art models (LLNeRF, Aleth-Nerf) vs. our RoSe.</figcaption>
+            </figure>
+
+            <h3 class="subsection-title">Qualitative Results</h3>
+            <figure class="figure">
+                <img src="figure3.png" alt="Novel View Synthesis" class="teaser">
+                <figcaption>Figure 3: Normal-light novel view synthesis comparison in low-light conditions.</figcaption>
+            </figure>
+
+            <h3 class="subsection-title">Analysis</h3>
+            <figure class="figure">
+                <img src="figure5.png" alt="Density Distribution" class="teaser">
+                <figcaption>Figure 5: Density distribution of sampling points along the camera ray, with zoomed-in image pixels for better observation.</figcaption>
+            </figure>
+        </div>
+    </div>
+</body>
+</html> 
