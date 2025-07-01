@@ -185,15 +185,15 @@
                     <a href="#" class="author-name">Ze Li</a><sup>1</sup>,
                     <a href="#" class="author-name">Feng Zhang</a><sup>2</sup>,
                     <a href="#" class="author-name">Xiatian Zhu</a><sup>3</sup>,
-                    <a href="#" class="author-name">Zhang Meng</a><sup>1</sup>,
+                    <a href="#" class="author-name">Meng Zhang</a><sup>1</sup>,
                     <a href="#" class="author-name">Yanghong Zhou</a><sup>4</sup>,
                     <a href="#" class="author-name">P. Y. Mok</a><sup>1</sup>
                 </div>
                 <div class="affiliations">
-                    <sup>1</sup>The Hong Kong University of Science and Technology<br>
-                    <sup>2</sup>Nanjing University of Posts and Telecommunications<br>
-                    <sup>3</sup>University of Surrey<br>
-                    <sup>4</sup>The Hong Kong Polytechnic University
+                    <sup>1</sup>The Hong Kong University of Science and Technology, Hong Kong SAR, China<br>
+                    <sup>2</sup>Nanjing University of Posts and Telecommunications, Nanjing, China<br>
+                    <sup>3</sup>University of Surrey，Guildford, United Kingdom <br>
+                    <sup>4</sup>The Hong Kong Polytechnic University, Hong Kong SAR, China
                 </div>
                 <div class="paper-links">
                     <a href="#" class="button"><i class="fas fa-file-alt"></i>Paper</a>
@@ -210,9 +210,36 @@
             <p>Synthesizing normal-light novel views from low-light multiview images remains a challenging yet practical task due to the low visibility and high ISO noise challenges. Existing low-light enhancement methods often struggle to preprocess these images effectively due to their inability to structurally correlate multiple views. While state-of-the-art approaches have advanced by manipulating illumination-related components during rendering, they often introduce color distortions and artifacts. Moreover, they rely solely on NeRF's multi-view optimization, which offers limited denoising effectiveness. In this paper, we propose a novel Robust Low-light Scene Restoration framework termed (RoSe), which enables novel-view synthesis under normal lighting from low-light multiview images. Inspired by the 2D Retinex theory, we frame this task as an illuminance transition estimation problem in 3D space, further conceptualizing it as a specialized rendering task. This multiview-consistent illuminance transition field establishes a robust connection between low-light and normal-light conditions. By further exploiting the inherent low-rank property of illumination to constrain the transition representation, we achieve more effective denoising without complex 2D techniques or explicit noise modeling. To this end, we design a concise dual-branch architecture and propose a low-rank denoising module. Experiments demonstrate that RoSe significantly outperforms state-of-the-art models in both rendering quality and multiview consistency on standard benchmarks.</p>
         </div>
 
+
         <div class="content-section">
-            <h2 class="section-title">Overview</h2>
-            <img src="teaser.png" alt="Method Overview" class="teaser">
+            <h2 class="section-title">Method</h2>
+            <h3 class="subsection-title">Overview</h3>
+            <figure class="figure">
+                <img src="figure1.png" alt="Method Overview" class="teaser">
+                <figcaption>Figure 2: An overview of robust low-light scene restoration architecture.</figcaption>
+            </figure>
+        </div>
+
+        <div class="content-section">
+            <h2 class="section-title">Results</h2>
+            
+            <h3 class="subsection-title">Comparisons with State-of-the-art Methods</h3>
+            <figure class="figure">
+                <img src="figure2.jpg" alt="Comparison with SOTA" class="teaser">
+                <figcaption>Figure 1: Image/video enhancement (Zero-DCE+NeRF, RUAS+NeRF, LLVE+NeRF) vs. state-of-the-art models (LLNeRF, Aleth-Nerf) vs. our RoSe.</figcaption>
+            </figure>
+
+            <h3 class="subsection-title">Qualitative Results</h3>
+            <figure class="figure">
+                <img src="figure3.jpg" alt="Novel View Synthesis" class="teaser">
+                <figcaption>Figure 3: Normal-light novel view synthesis comparison in low-light conditions.</figcaption>
+            </figure>
+
+            <h3 class="subsection-title">Analysis</h3>
+            <figure class="figure">
+                <img src="figure5.png" alt="Density Distribution" class="teaser">
+                <figcaption>Figure 5: Density distribution of sampling points along the camera ray, with zoomed-in image pixels for better observation.</figcaption>
+            </figure>
         </div>
 
         <div class="content-section">
@@ -224,37 +251,6 @@
     booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
     year={2025}
 }</pre>
-        </div>
-
-        <div class="content-section">
-            <h2 class="section-title">Method</h2>
-            <h3 class="subsection-title">Overview</h3>
-            <figure class="figure">
-                <img src="figure2.png" alt="Method Overview" class="teaser">
-                <figcaption>Figure 2: An overview of robust low-light scene restoration architecture.</figcaption>
-            </figure>
-        </div>
-
-        <div class="content-section">
-            <h2 class="section-title">Results</h2>
-            
-            <h3 class="subsection-title">Comparisons with State-of-the-art Methods</h3>
-            <figure class="figure">
-                <img src="figure1.png" alt="Comparison with SOTA" class="teaser">
-                <figcaption>Figure 1: Image/video enhancement (Zero-DCE+NeRF, RUAS+NeRF, LLVE+NeRF) vs. state-of-the-art models (LLNeRF, Aleth-Nerf) vs. our RoSe.</figcaption>
-            </figure>
-
-            <h3 class="subsection-title">Qualitative Results</h3>
-            <figure class="figure">
-                <img src="figure3.png" alt="Novel View Synthesis" class="teaser">
-                <figcaption>Figure 3: Normal-light novel view synthesis comparison in low-light conditions.</figcaption>
-            </figure>
-
-            <h3 class="subsection-title">Analysis</h3>
-            <figure class="figure">
-                <img src="figure5.png" alt="Density Distribution" class="teaser">
-                <figcaption>Figure 5: Density distribution of sampling points along the camera ray, with zoomed-in image pixels for better observation.</figcaption>
-            </figure>
         </div>
     </div>
 </body>
